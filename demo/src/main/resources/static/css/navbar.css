@@ -1,0 +1,15 @@
+.navbar{
+
+    background-color: brown;
+    overflow: hidden;
+}
+
+.navbar a{
+
+    color:aquamarine;
+    text-align: center;
+    float:left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    padding: 14px 16px;
+}

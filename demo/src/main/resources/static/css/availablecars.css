@@ -1,0 +1,28 @@
+.car-list {
+
+    display:flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.car-item  {
+
+    border: 1px solid;
+    padding: 10px;
+    margin: 5px;
+}
+
+.car-item p {
+
+    margin: 5px;
+
+}
+
+.car-item img {
+
+    width: 100%;
+    border-radius: 10px;
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #ccc;
+}
