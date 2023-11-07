@@ -76,6 +76,22 @@ public String searchCar(@RequestParam("makeModel") String makeModel, Model model
     return "availablecars"; 
 }
 
+@GetMapping("/editcar/{id}")
+public String editCarForm(@PathVariable Long id, Model model) {
+    Car car = carService.findById(id);
+    if (car != null) {
+        model.addAttribute("car", car);
+        return "editcar";
+    } else {
+        return "redirect:/cars";
+    }
+}
+
+    @PostMapping("/editcar")
+    public String editCar(@ModelAttribute Car car, Model model) {
+        carService.editCar(car);
+        return "redirect:/cars";
+    }
 
 
     

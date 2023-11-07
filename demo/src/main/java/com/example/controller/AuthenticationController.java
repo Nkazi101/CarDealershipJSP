@@ -90,5 +90,7 @@ public class AuthenticationController {
         session.invalidate();
         return "redirect:/sign-in";
     }
+
+    
 }
 
